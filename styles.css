@@ -1,0 +1,116 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body{
+    background-color: rgb(10,10,10);
+    margin: 0 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container{
+    width: 100%;
+    position: relative;
+    background: rgb(10,10,10);
+    max-width: 1000px;
+    min-height: 1000px;
+    margin: 4em;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0,0,0,0.9);
+}
+
+.container .columna{
+    position: relative;
+    background: rgb(40, 40, 40);   
+    padding: 40px;
+
+}
+
+.container .principal{
+    position: relative;
+    background: rgb(220,220,220);
+    padding: 40px;
+}
+
+.miPerfil{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgb(220,220,220);
+}
+
+.fotoCV{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.miPerfil .fotoCV img{
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.miPerfil h2{
+    font-size: 1.6em;
+    color: rgb(220,220,220);
+    text-transform: uppercase;
+    padding: .75em 0 .5em 0;
+    text-align: center;
+}
+
+.miPerfil h3{
+    font-size: 1.2em;
+    color: rgb(220,220,220);
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.contacto{
+    padding-top: 1em;
+    color: rgb(220,220,220);
+}
+
+.contacto h3{
+    text-transform: uppercase;
+    padding-bottom: 1em;
+}
+
+.contacto ul{
+    list-style: none;
+    position: relative;
+}
+
+ul .texto{
+    text-decoration: none;
+    color:rgb(220,220,220);
+    display: inline-block;
+}
+ul a:hover{
+    text-decoration: none;
+    color:rgb(150,150,150);
+}
+
+.contacto ul li{
+    position: relative;
+    padding-bottom: .5em;
+}
+
+.contacto ul li .icon{
+    position: relative;
+    display: inline-block;
+    padding-right: .75em;
+}
