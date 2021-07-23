@@ -31,12 +31,6 @@ body{
     background: rgb(30, 30, 30);
 }
 
-.container .principal{
-    position: relative;
-    background: rgb(220,220,220);
-    padding: 40px;
-}
-
 .fotoCV{
     background-image: url(foto.jpg);
     background-size: cover;
@@ -51,12 +45,13 @@ body{
     color: rgb(220,220,220);
     padding-left: 2em;
     padding-right: 2em;
-    padding-top: 4em;
+    padding-top: 3em;
 }
 
 .about h3{
     text-transform: uppercase;
     padding-top: 1em;
+    letter-spacing: 2px;
 }
 
 .about p{
@@ -64,13 +59,14 @@ body{
 }
 
 .contacto{
-    padding: 4em 2em;
+    padding: 4em 2em 3em 2em;
     color: rgb(220,220,220);
 }
 
 .contacto h3{
     text-transform: uppercase;
     padding-bottom: 1em;
+    letter-spacing: 2px;
 }
 
 .contacto ul{
@@ -99,8 +95,127 @@ ul a:hover{
     padding-right: .75em;
 }
 
+.skills{
+    color: rgb(220,220,220);
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+
+.skills h3{
+    text-transform: uppercase;
+    padding-bottom: 1em;
+    letter-spacing: 2px;
+}
+
+.skills .lista{
+    padding-left: 1em;
+}
+
+.lista .texto{
+    padding-bottom: .75em;
+}
+
+.container .principal{
+    position: relative;
+    background: rgb(220,220,220);
+    padding: 40px;
+}
+
+.principal .nyayt{
+    text-align: center;
+    position: relative;
+    padding-bottom: 2em;
+    }
+
+.nyayt .nombre{
+    text-transform: uppercase;
+    font-family: Verdana, sans-serif;
+    font-weight: 500;
+    font-size: 5em;
+}
+
+.nyayt .apellido{
+    font-weight: 1000;
+    text-transform: uppercase;
+    font-family: Verdana, sans-serif;
+    font-size: 5em;
+    letter-spacing: .125em;
+}
+
+.nyayt .titulo{
+    text-transform: uppercase;
+    font-family: Verdana, sans-serif;
+    font-weight: 600;
+    margin-top: 2em;
+    position: relative;
+}
+
+.titulo::after{
+    content: "";
+    width: 100%;
+    background: rgb(10,10,10);
+    height: 2px;
+    position: absolute;
+    top: 150%;
+    left: 0;
+}
+
+.principal .formacion{
+    padding: 3em 0;
+}
+
+.formacion h3{
+    text-transform: uppercase;
+    letter-spacing: 0.125em;
+    margin-bottom: 0.5em;
+}
+
+.formacion .bloque{
+    padding-bottom: 2em;
+}
+
+.formacion .fecha, .formacion .titulo, .formacion .inst{
+    display: flex;
+    margin-bottom: 0.5em;
+}
+
+.formacion .inst{
+    font-weight: bold;
+}
+
+.principal .idiomas{
+    padding-bottom: 3em;
+}
+
+.idiomas h3{
+    text-transform: uppercase;
+    letter-spacing: 0.125em;
+    margin-bottom: 0.5em;
+}
+
+.idiomas .bloque{
+    padding-bottom: 1em;
+}
+
+.idiomas .texto{
+    padding-bottom: 0.5em;
+}
+
+.idiomas .inst{
+    font-weight: bold;
+}
+
+
 @media (max-width: 1200px){
     .container{
         grid-template-columns: repeat(1,1fr);
+    }
+
+    .about, .contacto .skills{
+        align-items: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
     }
 }
