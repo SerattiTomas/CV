@@ -232,8 +232,16 @@ body{
 /*///////////////////////////// RESPONSIVE ///////////////////////////*/
 
 @media (max-width: 1200px){
+
+    body{
+        display: unset;
+    }
+
     .container{
         grid-template-columns: repeat(1,1fr);
+        margin: auto;
+        margin-top: -1.15rem;
+        margin-bottom: -1.15rem;
     }
 
     .about, .contacto, .skills{
