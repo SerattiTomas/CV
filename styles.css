@@ -1,8 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
 *{
     margin:0;
     padding:0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 body{
@@ -26,6 +28,14 @@ body{
     box-shadow: 0 35px 55px rgba(0,0,0,0.9);
 }
 
+h3{
+    font-size: 1.5rem;
+}
+
+.principal p{
+    font-size: 1.125rem;
+}
+
 /*////////////////////////////   COLUMNA   ////////////////////////////////////*/
 
 .container .columna{
@@ -37,37 +47,37 @@ body{
     background-image: url(foto.jpg);
     background-size: cover;
     background-position: center;
-    height: 20em;
+    height: 20rem;
     width: 100%;
     overflow: hidden;
-    padding-bottom: 1em;
+    padding-bottom: 1rem;
 }
 
 .about{
     color: rgb(220,220,220);
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-top: 3em;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-top: 3rem;
 }
 
 .about h3{
     text-transform: uppercase;
-    padding-top: 1em;
+    padding-top: 1rem;
     letter-spacing: 2px;
 }
 
 .about .texto{
-    padding-top: 1em;
+    padding-top: 1rem;
 }
 
 .contacto{
-    padding: 4em 2em 3em 2em;
+    padding: 4rem 2rem 3rem 2rem;
     color: rgb(220,220,220);
 }
 
 .contacto h3{
     text-transform: uppercase;
-    padding-bottom: 1em;
+    padding-bottom: 1rem;
     letter-spacing: 2px;
 }
 
@@ -89,30 +99,30 @@ body{
 
 .contacto ul li{
     position: relative;
-    padding-bottom: .75em;
+    padding-bottom: .75rem;
 }
 
 .contacto ul li .icon{
     position: relative;
     display: inline-block;
-    padding-right: .75em;
+    padding-right: .75rem;
 }
 
 .skills{
     color: rgb(220,220,220);
-    padding-left: 2em;
-    padding-right: 2em;
-    padding-bottom: 2em;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    padding-bottom: 2rem;
 }
 
 .skills h3{
     text-transform: uppercase;
-    padding-bottom: 1em;
+    padding-bottom: 1rem;
     letter-spacing: 2px;
 }
 
 .skills ul{
-    padding-left: 1em;
+    padding-left: 1rem;
 }
 
 .skills ul li{
@@ -120,7 +130,7 @@ body{
 }
 
 .skills ul .texto{
-    padding-bottom: .75em;
+    padding-bottom: .75rem;
 }
 
 /*////////////////////////////   PRINCIPAL   ////////////////////////////////////*/
@@ -134,30 +144,29 @@ body{
 .principal .nyayt{
     text-align: center;
     position: relative;
-    padding-bottom: 2em;
+    padding-bottom: 2rem;
     }
 
 .nyayt .nombre{
     text-transform: uppercase;
     font-family: Verdana, sans-serif;
     font-weight: 500;
-    font-size: 5em;
+    font-size: 5rem;
 }
 
 .nyayt .apellido{
     font-weight: 1000;
     text-transform: uppercase;
     font-family: Verdana, sans-serif;
-    font-size: 5em;
-    letter-spacing: .125em;
+    font-size: 5rem;
+    letter-spacing: .125rem;
 }
 
 .nyayt .titulo{
     text-transform: uppercase;
-    font-family: sans-serif;
     font-weight: 600;
-    margin-top: 2em;
-    font-size: 1em;
+    margin-top: 2rem;
+    font-size: 1.5rem;
     position: relative;
 }
 
@@ -171,44 +180,67 @@ body{
 }
 
 .principal .formacion{
-    padding: 3em 0;
+    padding: 3rem 0;
 }
 
 .formacion h3{
     text-transform: uppercase;
-    letter-spacing: 0.125em;
-    margin-bottom: 1em;
+    letter-spacing: 0.125rem;
+    margin-bottom: 1rem;
 }
 
 .formacion .bloque{
-    padding-bottom: 2em;
+    padding-bottom: 2rem;
 }
 
 .formacion .fecha, .formacion .titulo, .formacion .inst{
     display: flex;
-    margin-bottom: 1em;
+    margin-bottom: 1rem;
 }
 
 .formacion .inst{
     font-weight: bold;
 }
 
+.principal .cursos{
+    padding-bottom: 3rem;
+}
+
+.cursos h3{
+    text-transform: uppercase;
+    letter-spacing: 0.125rem;
+    margin-bottom: 1rem;
+}
+
+.cursos .bloque{
+    padding-bottom: 2rem;
+}
+
+.cursos .fecha, .cursos .titulo, .cursos .inst{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+.cursos .inst{
+    font-weight: bold;
+}
+
 .principal .idiomas{
-    padding-bottom: 3em;
+    padding-bottom: 3rem;
 }
 
 .idiomas h3{
     text-transform: uppercase;
-    letter-spacing: 0.125em;
-    margin-bottom: 1em;
+    letter-spacing: 0.125rem;
+    margin-bottom: 1rem;
 }
 
 .idiomas .bloque{
-    padding-bottom: 1em;
+    padding-bottom: 1rem;
 }
 
 .idiomas .texto{
-    padding-bottom: 0.5em;
+    padding-bottom: 0.5rem;
 }
 
 .idiomas .inst{
@@ -217,16 +249,16 @@ body{
 
 .objetivos h3{
     text-transform: uppercase;
-    letter-spacing: 0.125em;
-    margin-bottom: 1em;
+    letter-spacing: 0.125rem;
+    margin-bottom: 1rem;
 }
 
 .objetivos .bloque{
-    padding-bottom: 1em;
+    padding-bottom: 1rem;
 }
 
 .objetivos .texto{
-    padding-bottom: 1em;
+    padding-bottom: 1rem;
 }
 
 /*///////////////////////////// RESPONSIVE ///////////////////////////*/
@@ -251,7 +283,7 @@ body{
     }
 
     .about h3, .contacto h3, .skills h3{
-        margin-left: 0.5em;
+        margin-left: 0.5rem;
     }
 
     .skills ul{
